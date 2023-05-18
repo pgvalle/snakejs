@@ -76,7 +76,6 @@ const snake = {
 
   grow: function () {
     this.body.push({ x: -1, y: -1 })
-    console.log(this.body)
   },
 
   draw: function () {
@@ -130,7 +129,9 @@ const GameplayKeyPressActions = {
 }
 // OVER
 const OverKeyPressActions = {
-  
+  Escape: function () {
+    window.close()
+  }
 }
 
 // setup keypress handling
